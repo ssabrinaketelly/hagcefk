@@ -1,0 +1,75 @@
+/* Reset básico para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Conteúdo Principal */
+main {
+    padding: 2em;
+}
+
+.intro, .conteudo {
+    margin-bottom: 2em;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    main {
+        padding: 1em;
+    }
+}
+
+/* Responsividade para dispositivos muito pequenos */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header nav ul {
+        gap: 0.5em;
+    }
+
+    .intro, .conteudo {
+        padding: 0.5em;
+    }
+}
