@@ -1,75 +1,22 @@
-/* Reset básico para garantir consistência */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodapé.css");
+
+:root {
+    --cor-de-fundo: #EBECEE;
+    --branco: #FFFFFF;
+    --laranja: #EB9B00;
+    --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    --fonte-principal: "Poppins";
+    --azul: #002F52;
 }
 
-/* Estilos globais */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
-
-/* Cabeçalho */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Conteúdo Principal */
-main {
-    padding: 2em;
-}
-
-.intro, .conteudo {
-    margin-bottom: 2em;
-}
-
-/* Rodapé */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-}
-/* Responsividade para dispositivos móveis */
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-    }
-
-    main {
-        padding: 1em;
-    }
-}
-
-/* Responsividade para dispositivos muito pequenos */
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5em;
-    }
-
-    header nav ul {
-        gap: 0.5em;
-    }
-
-    .intro, .conteudo {
-        padding: 0.5em;
-    }
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
